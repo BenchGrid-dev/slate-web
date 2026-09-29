@@ -2,7 +2,7 @@
 
 - `public/benchgrid.svg`: BenchGrid mark copied from `../web/public/favicon.svg`.
 - `public/slate-logo-mark.svg`: Original Slate diamond exported from the [BenchGrid Figma design](https://www.figma.com/design/3WnhzcfFAxAfcB232qdjrM/BenchGrid?node-id=1-4). Used by the header and footer; wordmark typography follows the same design.
-- `public/slate-desktop.jpg`: Desktop wallpaper copied from the Slate OS project; retained as an unused demo asset.
+- `public/slate-desktop.jpg`: Desktop wallpaper copied from the SlateOS project; retained as an unused demo asset.
 - `public/favicon.svg`: Slate diamond placeholder, based on the system's ◆ glyph.
 - `public/slate-meadow.jpg`: Original background generated with the built-in imagegen tool, converted to JPEG for efficient local delivery. No external image requests are needed.
 
