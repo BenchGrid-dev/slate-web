@@ -20,11 +20,11 @@ export default async function OpenGraphImage() {
     <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", color: "#19352f", backgroundColor: "#eff4ed" }}>
       <img src={`data:image/jpeg;base64,${background.toString("base64")}`} alt="" width={1200} height={630} style={{ position: "absolute", objectFit: "cover" }} />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(255,255,255,.84), rgba(255,255,255,.48))" }} />
-      <div style={{ display: "flex", position: "relative", width: 256, height: 34, flexShrink: 0, marginBottom: 34, fontFamily: "DM Sans", color: "#000" }}>
+      <div style={{ display: "flex", position: "relative", width: 264, height: 34, flexShrink: 0, marginBottom: 34, fontFamily: "DM Sans", color: "#000" }}>
         <img src={`data:image/svg+xml;base64,${mark.toString("base64")}`} alt="" width={20.25} height={20.25} style={{ position: "absolute", left: 0, top: 6.875 }} />
         <span style={{ position: "absolute", left: 24.1875, top: -6.34375, fontSize: 36, fontWeight: 500, lineHeight: 1.296875, letterSpacing: "-0.04em" }}>Slate</span>
-        <span style={{ position: "absolute", left: 117.34, top: 14.06, fontSize: 15.6, fontWeight: 500, lineHeight: 1.296875, color: "#78847c" }}>by</span>
-        <div style={{ display: "flex", position: "absolute", left: 146.4, top: 6.86, fontSize: 22.8, fontWeight: 600, lineHeight: 1.296875, letterSpacing: "-0.04em" }}>benchgrid<span style={{ color: "#ea580c" }}>.</span></div>
+        <span style={{ position: "absolute", left: 117.34, top: 6.86, fontSize: 22.8, fontWeight: 500, lineHeight: 1.296875, color: "#78847c" }}>by</span>
+        <div style={{ display: "flex", position: "absolute", left: 154.4, top: 6.86, fontSize: 22.8, fontWeight: 600, lineHeight: 1.296875, letterSpacing: "-0.04em" }}>benchgrid<span style={{ color: "#ea580c" }}>.</span></div>
       </div>
       <div style={{ display: "flex", fontFamily: "Instrument Serif", fontSize: 94, lineHeight: 1.06 }}>A little less <span style={{ fontStyle: "italic", color: "#28766b", marginLeft: 17 }}>human.</span></div>
       <div style={{ display: "flex", fontFamily: "Instrument Serif", fontSize: 94, lineHeight: 1.06 }}>A lot more possible.</div>

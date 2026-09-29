@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
-import { ArrowLeft, ArrowRight, Check, ChevronDown, FileText, Folder, Globe2, LayoutGrid, Mail, Monitor, MousePointer2, Network, Search, Star, StickyNote, Terminal, Volume2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ChevronDown, FileText, Folder, Globe2, LayoutGrid, Mail, Monitor, Network, Search, Star, StickyNote, Terminal, Volume2 } from "lucide-react";
 import styles from "./desktop-demo.module.css";
 
 type Beat = { target: string; message: string; click?: boolean; drag?: boolean };
@@ -179,7 +179,7 @@ export default function DesktopDemo() {
       </div>
     </div>
     <div className={styles.playback}><div className={styles.sceneTabs} role="group" aria-label="Desktop demo scenes">{SCENES.map((item,index)=><button key={item.short} aria-label={item.name} aria-pressed={scene===index} onClick={()=>chooseScene(index)} className={scene===index?styles.activeScene:""}><item.icon /><span>{item.short}</span>{scene===index&&<i style={{width:`${elapsed / SCENE_MS * 100}%`}} />}</button>)}</div></div>
-    <div className={styles.demoLegend}><span><span className={styles.legendCursor} aria-hidden="true"><Cursor agent /></span> Slate works at its own pace.</span><span><MousePointer2 /> Your cursor, your corner. Try the notes.</span></div>
+    <div className={styles.demoLegend}><span><span className={styles.legendCursor} aria-hidden="true"><Cursor agent /></span> Slate works at its own pace.</span><span><span className={styles.legendCursor} aria-hidden="true"><Cursor /></span> Your cursor, your corner. Try the notes.</span></div>
     <span className="sr-only" role="status">{s.name}. {complete?s.result:playing?"Agent working. Your notes remain interactive.":"Demo paused."}</span>
   </div>;
 }

@@ -201,7 +201,7 @@
 .transport svg { width:12px; height:12px; }
 .demoLegend { display:flex; align-items:center; justify-content:center; gap:21px; margin-top:15px; color:#7f9286; font-size: 13px; flex-wrap:wrap; }
 .demoLegend>span { display:flex; align-items:center; gap:6px; }
-.demoLegend svg { height:11px; width:11px; fill:#23443a; color:#23443a; }
+
 .agentDot { width:7px; height:7px; background:#b9e6c5; border:1px solid #85b997; border-radius:50%; }
 .demoLegend>.autoplayLabel { font-size: 13px; letter-spacing:1px; font-family:var(--mono); color:#a0ac9e; }
 @keyframes breathe { 0%,100%{opacity:1} 50%{opacity:.4} }
@@ -308,5 +308,5 @@
 .sceneTabs>button { transition:background-color .18s,color .18s; }
 .sceneTabs>button.activeScene:hover { background-color:#1b342e; color:#f1f6ef; }
 .legendCursor { display:inline-flex; align-items:center; }
-.demoLegend .legendCursor>svg { width:15px; height:18px; fill:none; color:inherit; }
+.demoLegend .legendCursor>svg { display:block; width:12px; height:15px; fill:none; color:inherit; }
 .legendCursor>span { display:none; }

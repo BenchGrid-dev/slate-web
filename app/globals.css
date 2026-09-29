@@ -161,13 +161,13 @@ footer{border-top:1px solid var(--line)}.footer-top{display:flex;align-items:cen
 }
 .slate-logo-mark { display: block; align-self: center; flex: none; width: .5625em; height: .5625em; }
 .brand-type { font-family: var(--sans); font-size: 1em; font-weight: 500; line-height: 1.296875; letter-spacing: -.04em; font-optical-sizing: none; font-variation-settings: "opsz" 14; }
-.brand-by { color: #78847c; font-size: 13px; line-height: 1; margin-left: 3px; }
+.brand-by { color: #78847c; font-family: var(--sans); font-size: 19px; line-height: 1.296875; letter-spacing: -.04em; font-optical-sizing: none; font-variation-settings: "opsz" 14; margin-left: 3px; }
 .benchgrid-wordmark { color: #000; font-family: var(--sans); font-size: 19px; font-weight: 600; line-height: 1.296875; letter-spacing: -.04em; font-optical-sizing: none; font-variation-settings: "opsz" 14; }
 .benchgrid-wordmark > span { color: #ea580c; }
 .brand-footer .slate-wordmark { font-size: 26px; }
 @media(max-width:560px) {
  .brand { gap: 7px; }
  .slate-wordmark, .brand-footer .slate-wordmark { font-size: 25px; }
- .brand-by { margin-left: 1px; }
+ .brand-by { margin-left: 1px; font-size: 17px; }
  .benchgrid-wordmark { font-size: 17px; }
 }
