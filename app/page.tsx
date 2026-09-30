@@ -38,7 +38,13 @@ export default function Home() {
         <div id="experience" className="demo-section"><DesktopDemo /></div>
       </section>
 
-      <section className="foundation page-width" aria-label="Built on open foundations"><p>A fresh perspective. A familiar foundation.</p><div className="foundation-logos"><span className="nixos-logo">❄ <b>NixOS</b></span><span><Terminal /> Linux</span><span className="rust-logo"><span>⚙</span> Rust</span><span className="wayland-logo"><Circle /> Wayland</span><span className="claude-logo"><span>✳</span> Claude Code</span><span><Code2 /> Codex</span></div></section>
+      <section className="foundation page-width" aria-label="Built on open foundations"><p>A fresh perspective. A familiar foundation.</p><div className="foundation-logos"><span className="foundation-brand foundation-nixos"><img src="/brands/nixos.svg" width={170} height={92} alt="NixOS" /></span>{[
+          { name: "Linux", src: "/brands/linux.png", width: 32, height: 39 },
+          { name: "Rust", src: "/brands/rust.png", width: 32, height: 32 },
+          { name: "Wayland", src: "/brands/wayland.png", width: 32, height: 32 },
+          { name: "Claude Code", src: "/brands/claude.png", width: 32, height: 32 },
+          { name: "Codex", src: "/brands/codex.svg", width: 32, height: 32 },
+        ].map(brand => <span key={brand.name} className="foundation-brand"><img src={brand.src} width={brand.width} height={brand.height} alt="" aria-hidden="true" /><span>{brand.name}</span></span>)}</div></section>
 
       <section id="why-slate" className="capabilities page-width"><div className="section-heading"><div><h2>One desktop.<br className="mobile-break" /> <em>New possibilities.</em></h2></div><p>Less switching. More doing.<br />Everything your agent needs to help, woven into the place you already work.</p></div>
         <div className="feature-grid">
