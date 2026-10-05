@@ -20,3 +20,7 @@ Original publisher artwork is served locally from `public/brands/`. The page app
 - `wayland.png`: Official logo from the [Wayland website](https://wayland.freedesktop.org/) ([source PNG](https://wayland.freedesktop.org/wayland.png)). Displayed in grayscale at reduced opacity.
 - `claude.png`: Official Claude spark from the [Claude website favicon](https://claude.com/favicon.ico), converted from ICO to PNG without redrawing. Copyright Anthropic. Displayed in grayscale at reduced opacity.
 - `codex.svg`: Official OpenAI mark from the [Codex developer website](https://developers.openai.com/codex/), also used by OpenAI's [official Codex extension](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt). SVG geometry preserved; fill normalized to black and displayed at reduced opacity. Copyright OpenAI.
+
+## Demo video
+
+`public/slate-demo-video-poster.jpg` is the original thumbnail for BenchGrid’s [SlateOS live demo](https://youtu.be/Mg-YcqKyDvs), downloaded from the YouTube page’s `og:image` on 2026-10-05. The video itself is streamed through YouTube’s embedded player when the viewer presses play.

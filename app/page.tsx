@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import DesktopDemo from "./desktop-demo";
+import DemoVideo from "./demo-video";
 import { ArrowRight, ArrowUp, ArrowUpRight, Check, Code2, Copy, Github, History, Layers3, Menu, MousePointer2, KeyRound, Plus, ShieldCheck, Sparkles, Terminal, Undo2, X } from "lucide-react";
 
 const REPO = "https://github.com/BenchGrid-dev/slate";
@@ -55,6 +56,8 @@ export default function Home() {
           <article className="feature feature-small feature-undo"><History className="small-feature-icon" size={20} /><h3>Room to change your mind.</h3><p>Preview and restore scoped local file changes with btrfs task snapshots.</p><div className="undo-example"><span><i />Before your task</span><div /><span><i />A fresh start</span><Undo2 size={18} /></div></article>
         </div>
       </section>
+
+      <DemoVideo />
 
       <section className="agent-choice page-width"><div className="choice-copy"><h2>Pick your agent.<br /><em>Keep your world.</em></h2><p>Bring Claude Code or Codex, with the account you already use. Slate connects your chosen agent to your desktop, so good ideas can become real work.</p><a className="text-link" href={`${REPO}/blob/main/crates/slash/README.md`} target="_blank" rel="noreferrer">A familiar agent. A whole new workspace. <ArrowUpRight size={14} /></a></div><div className="agent-settings"><div className="settings-title"><span><Diamond /> Your Slate</span><span>AI preferences</span></div><span className="settings-label">CHOOSE YOUR AGENT</span><div className="backend-options">{(["claude", "codex"] as const).map(b => <button key={b} aria-pressed={backend === b} onClick={() => setBackend(b)} className={backend === b ? "selected" : ""}><span className={b === "claude" ? "claude-symbol" : "codex-symbol"}>{b === "claude" ? "✳" : <Code2 size={26} />}</span><span><strong>{b === "claude" ? "Claude Code" : "Codex"}</strong><small>{b === "claude" ? "By Anthropic" : "By OpenAI"}</small></span><span className="radio-circle">{backend === b && <span />}</span></button>)}<button className="byok-option" disabled aria-label="BYOK — Bring your own key, coming soon"><span className="codex-symbol"><KeyRound size={26} /></span><span><strong>BYOK</strong><small>Bring your own key</small></span><span className="coming-soon">Coming soon</span></button></div><div className="settings-detail"><Terminal size={14} /><code>/agent {backend}</code><span>That’s all it takes.</span></div><div className="settings-bottom"><ShieldCheck size={14} /> Your account. Your choice. Connected through the official CLI.</div></div></section>
 

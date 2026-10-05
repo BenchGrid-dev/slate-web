@@ -15,6 +15,8 @@ The interactive desktop is a concept demonstration, not a live connection to the
 
 Fonts are self-hosted through Fontsource. The meadow image is a locally served image generated with the built-in imagegen tool. See `ASSETS.md` for the generation prompt.
 
+The live [SlateOS demo video](https://youtu.be/Mg-YcqKyDvs) sits between the capabilities and agent selection sections. Its local poster loads lazily; the YouTube player loads only when the viewer presses play.
+
 ## SEO
 
 The canonical production origin is `https://slate.benchgrid.dev`, defined in `app/site.ts`. The site includes Open Graph and Twitter metadata, a locally generated 1200×630 sharing image, JSON-LD, `/robots.txt`, and `/sitemap.xml`. Vercel preview builds (`VERCEL_ENV=preview`) are marked noindex and excluded from the sitemap.
