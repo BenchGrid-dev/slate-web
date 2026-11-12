@@ -11,11 +11,13 @@ npm run dev
 
 Open http://127.0.0.1:3000. Run `npm run build` for a production build and `npm run typecheck` for TypeScript validation.
 
-The interactive desktop is a concept demonstration, not a live connection to the OS. Product copy follows the source repository's pre-alpha status. Links point to https://github.com/BenchGrid-dev/slate. The Slate logo mark and both wordmark styles follow the BenchGrid Figma design. The inline BenchGrid wordmark links to https://benchgrid.dev.
+The interactive desktop is a concept demonstration, not a live connection to the OS. Links point to https://github.com/BenchGrid-dev/slate. The Slate logo mark and both wordmark styles follow the BenchGrid Figma design. The inline BenchGrid wordmark links to https://benchgrid.dev.
 
 Fonts are self-hosted through Fontsource. The meadow image is a locally served image generated with the built-in imagegen tool. See `ASSETS.md` for the generation prompt.
 
 The live [SlateOS demo video](https://youtu.be/Mg-YcqKyDvs) sits between the capabilities and agent selection sections. Its local poster loads lazily; the YouTube player loads only when the viewer presses play.
+
+The primary button uses the latest published GitHub release of `BenchGrid-dev/slate`, with hourly revalidation and a known release as a fallback when GitHub is unavailable.
 
 ## SEO
 
